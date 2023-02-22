@@ -1,0 +1,92 @@
+.main{
+    background-color: rgb(255, 255, 255);    
+    margin: auto;
+}
+
+.button{
+    background-color:rgb(34,197,94);
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    text-decoration: none;
+    height: max-content;
+    width: max-content;
+    font-size: x-large;
+    padding:10px 20px 10px 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    display: grid;
+
+    &:hover{
+        box-shadow: 3px 3px 3px #797676;
+    }
+}
+
+.forms{
+    height: fit-content;
+    margin: 25vh auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(114, 111, 111);
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    opacity: 58%;
+    border: 2px solid black;
+
+    .passwordreset-form{
+        padding-top: 20px;
+    }
+
+    .form-field{
+        padding: 10px;
+        display: block;
+
+        input{
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px;
+            font-weight: bold;
+            border: 3px solid black;
+
+            &::placeholder{
+                color: #000000;
+                opacity: 80%;
+            }
+        
+            &:hover{
+                border: 3px solid green;
+            }
+        }
+    }
+
+    .form-error{
+        color:red;
+        font-weight: bold;
+    }
+    
+    .form-head{
+        color: black;
+        font-weight: bold;
+        font-size: larger;
+    }
+    
+    .form-footer{
+        color: black;
+        font-weight: bold;
+    }
+    
+    .link{
+        color: #4ecc71;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+}
+
+

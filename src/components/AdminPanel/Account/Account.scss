@@ -1,0 +1,158 @@
+.account{
+    display: flex;
+    width: 100%;
+
+    .accountContainer{
+        flex: 20;
+    }
+
+    .useraccount{
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+        border-radius: 10px;
+        margin : 10px;
+        padding: 10px;
+        justify-content: space-evenly;
+        
+        .image{
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+            border-radius: 10px;
+            padding:20px;
+            margin-top: 0px;
+
+            .left{
+                display: flex;
+                margin: auto;
+
+                .imglabel{
+                    position: relative;
+                    top:70px;
+                    bottom: 0;
+                    cursor: pointer;
+                }
+
+                .text{
+                    margin: auto;
+                    padding-left: 10px;
+                    font-weight: bold;
+                    font-size: larger;
+                }
+            }
+
+            .right{
+                text-align: center;
+                margin: auto;
+
+                .imglabel{
+                    display: inline-block;
+                    background-color: lightgreen;
+                    padding: 0.5rem;
+                    cursor: pointer;
+                    margin-top: 1rem;
+                    font-weight: bold;
+                    font-size: large;
+                }
+            }
+            img{
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                width: 100px;
+            }
+        }
+
+        .locationmap{
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .profile{
+            justify-content: space-evenly;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+            border-radius: 10px;
+            padding:20px;
+            margin-top: 20px;
+            white-space: nowrap;
+            flex-wrap: wrap;
+
+            .title{
+                font-weight: bold;
+                font-size: larger;
+                margin-left: 115px;
+            }
+
+            form{
+                display: flex;
+                justify-content: center;
+                gap:15px;
+                flex-wrap: wrap;
+
+                .forminput{
+                    width: 40%;
+
+                    .location{
+                        position: absolute;
+                        padding: 10px;
+                    }
+
+                    .locationpicker{
+                        position: relative;
+                        bottom: 25px;
+                    }
+
+                    label{
+                       display: flex;
+                       gap: 10px;
+                       padding-top: 10px;
+                       font-weight: bold;
+                       font-size: x-small;
+                    }
+
+                    input{
+                        position: relative;
+                        width: 100%;
+                        padding: 5px;
+                        border: none;
+                        border-bottom: 1px solid rgb(128, 128, 128);
+
+                        ::placeholder{
+                            color: lightgray;
+                        }
+                    }
+
+                    .required{
+                        color:red;
+                        font-weight: bold;
+                    }
+                }
+
+                button{
+                    width: 350px;
+                    height: fit-content;
+                    padding: 1px;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    background-color: lightgreen;
+                }
+
+                .form-error{
+                    color:red;
+                    font-size: small;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+

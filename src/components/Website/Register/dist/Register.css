@@ -1,0 +1,36 @@
+body {
+  background-color: green;
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.forms {
+  margin: 25vh auto;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #cfcfcf;
+  border: 1px solid gray;
+  text-align: center;
+}
+.forms .form-head {
+  text-align: center;
+  font-weight: bold;
+  color: #54c67d;
+}
+.forms .form-field {
+  padding-left: 100px;
+}
+.forms .form-field input {
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+}
+.forms .form-error {
+  color: red;
+  font-size: smaller;
+}

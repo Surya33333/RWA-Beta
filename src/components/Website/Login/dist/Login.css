@@ -1,0 +1,26 @@
+.link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.forms {
+  margin: 25vh auto;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #cfcfcf;
+  align-items: center;
+  text-align: center;
+}
+.forms .form-head {
+  text-align: center;
+  font-weight: bold;
+}
+.forms .form-field {
+  padding: 10px;
+}
+.forms .form-field input {
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+}

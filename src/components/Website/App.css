@@ -1,0 +1,23 @@
+.body{
+  background-color: white;
+}
+
+.main{
+  display: flex;
+  margin: 10px auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.content{
+  margin:auto 30px;
+  text-align: left;
+}
+
+.head{
+  color: rgb(84, 198, 125);
+}
+
+.image{
+  margin: auto;
+}

@@ -1,0 +1,45 @@
+.datatable{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+    height: 600px;
+    padding: 10px;
+
+    .userstatus{
+        color:gray;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: bold;
+
+        &.verified{
+            color: green;
+            background-color: azure;
+        }
+
+        &.unverified{
+            color: green;
+            background-color: azure;
+        }
+    }
+
+    .actions{
+        display: flex;
+        gap:15px;
+
+        .viewbutton{
+            color:darkblue;
+            border-radius: 5px;
+            padding: 2px 5px;
+            border: 1px dotted rgba(0,0,139,0.596);
+            cursor: pointer;
+        }
+
+        .deletebutton{
+            color: red;
+            border-radius: 5px;
+            padding: 2px 5px;
+            border: 1px dotted rgba(254, 0, 0, 0.596);
+            cursor: pointer;
+        }
+    }
+
+}
