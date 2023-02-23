@@ -11,7 +11,8 @@ import * as Icon from 'react-bootstrap-icons';
 import profile from '../../../Images/profile.jpg';
 import Modal from '../Modals/Modal.js';
 
-const usertoken = sessionStorage.getItem('token');
+const usertoken = true;
+// const usertoken = sessionStorage.getItem('token');
 const username = JSON.parse(sessionStorage.getItem('username'));
 const useremail = JSON.parse(sessionStorage.getItem('useremail'));
 

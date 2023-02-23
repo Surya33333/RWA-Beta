@@ -5,7 +5,9 @@ import SideBar from "../SideBar/SideBar.js";
 import NavBar from "../NavBar/NavBar.js";
 import * as Icon from 'react-bootstrap-icons';
 
-const usertoken = sessionStorage.getItem('token');
+const usertoken = true;
+
+// const usertoken = sessionStorage.getItem('token');
 const upi = "spnreddy2002@ybl";
 const walletbalance = "290.00"
 const Settings = () => {
@@ -37,10 +39,10 @@ const [open, setChangePasswordTab] = useState(false);
                       </div>
                     </div>
                 </div>
-                <div className={` ${open ? 'h-[220px]' : 'h-[100px]'} duration-300 bg-white shadow-lg m-[10px] rounded-md p-[10px]`}>
+                <div className={` ${open ? 'h-[220px]' : 'h-[100px]'} duration-200 bg-white shadow-lg m-[10px] rounded-md p-[10px]`}>
                   <div className="resetpassword flex justify-between m-[10px] rounded-md p-[10px]">
                     <div className="font-bold align-middle">Change Password ?</div>
-                    <div className="bg-button-color mt-1  text-slate-100 shadow-md hover:translate-x-1 hover:scale-105 cursor-pointer rounded-xl font-bold p-2" onClick={()=>{setChangePasswordTab(!open)}}>{!open ? "Change Password" : "Close"}</div>
+                    {!open ? <div className="bg-button-color mt-1  text-slate-100 shadow-md hover:translate-x-1 hover:scale-105 cursor-pointer rounded-xl font-bold p-2" onClick={()=>{setChangePasswordTab(!open)}}>Change Password</div> : <div onClick={()=>{setChangePasswordTab(!open)}} className="text-3xl"><Icon.X/></div>}
                   </div>
                   <div>
                   <form className={` ${open ? '' : 'scale-0'}  duration-300 flex-col`}> 
@@ -58,7 +60,10 @@ const [open, setChangePasswordTab] = useState(false);
                       <input id="confirmnewpassword"   type="password" placeholder="**********" className="align-middle bg-slate-200 p-1 rounded-md focus:outline-none focus:bg-slate-300"/>
                     </div>
                   </div>
-                  <div className="bg-button-color my-3 m-auto  text-slate-100 shadow-md hover:translate-x-1 hover:scale-105 cursor-pointer rounded-xl font-bold p-2 w-fit">Update</div>
+                  <div className="flex float-right mt-4 gap-2 mr-8">
+                    <div className="bg-button-color   text-slate-100 shadow-md hover:translate-x-1 hover:scale-105 cursor-pointer rounded-xl font-bold p-2 w-fit">Update</div>
+                    <div className="bg-red-500  text-slate-100 shadow-md hover:translate-x-1 hover:scale-105 cursor-pointer rounded-xl font-bold p-2 w-fit" onClick={()=>{setChangePasswordTab(!open)}}>Cancel</div>  
+                  </div>
                   </form>
                   </div>
                 </div>

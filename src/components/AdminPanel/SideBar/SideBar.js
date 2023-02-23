@@ -42,11 +42,11 @@ const SideNavBar = () => {
   const [open, setopen] = useState(true);
 
     return (
-      <div className={`sidebar ${open ? "w-40": "w-20" } duration-300`}>
+      <div className={`sidebar ${open ? "w-[38]": "w-20" } duration-300`}>
         <div className="top"><Icon.ArrowLeftShort onClick={()=>{setopen(!open)}} className={`menutoggle  ${!open && 'rotate-180 mr-5' }`}/>
           <span className={`logo ${open ? "": "hidden" }`}>LOGO</span>
         </div><hr></hr>
-        <div className="center" onMouseEnter={() => setopen(true)} onMouseLeave={() => setopen(false)}>
+        <div className="center">
           <ul>
             {Menu.map((item,index)=>{
               return <li><NavLink activeClassName="active" className="nav-items" onClick={item.action} key={index} to={item.path} style={{textDecoration:"none"}} ><span className="icon">{item.icon}</span><span className={`${open ? "": "scale-0" }`}>{item.title}</span></NavLink></li>
