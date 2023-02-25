@@ -5,8 +5,8 @@ import NavBar from "../NavBar/NavBar.js";
 import Login from '../../Website/Login/Login.js';
 import { useNavigate, useParams } from 'react-router-dom';
 
-const usertoken = sessionStorage.getItem('token');
-
+// const usertoken = sessionStorage.getItem('token');
+const usertoken = true;
 
 const SelectedOrder = () => {
 
@@ -16,9 +16,9 @@ const SelectedOrder = () => {
     return(
         <>
         {!usertoken ? (<Login />):(
-            <div className="list">
+            <div className="list flex w-[100%]">
             <SideBar />
-            <div className="listContainer">
+            <div className="listContainer  flex-1 overflow-scroll">
             <NavBar />
             {user.OrderId}
             </div>

@@ -42,7 +42,7 @@ const SideNavBar = () => {
   const [open, setopen] = useState(true);
 
     return (
-      <div className={`sidebar ${open ? "w-[38]": "w-20" } duration-300`}>
+      <div className={`sidebar ${open ? "w-[38]": "w-20" } duration-400`}>
         <div className="top"><Icon.ArrowLeftShort onClick={()=>{setopen(!open)}} className={`menutoggle  ${!open && 'rotate-180 mr-5' }`}/>
           <span className={`logo ${open ? "": "hidden" }`}>LOGO</span>
         </div><hr></hr>

@@ -1,5 +1,6 @@
-import { react, useState } from "react";
-import "./Account.scss"
+import { react, useState, useContext } from "react";
+import UserContext from '../../UseContext/UseContext.js'
+import "./Account.scss";
 import SideBar from "../SideBar/SideBar.js";
 import NavBar from "../NavBar/NavBar.js";
 import DataTable from "../DataTable/DataTable.js"
@@ -18,7 +19,7 @@ const useremail = JSON.parse(sessionStorage.getItem('useremail'));
 
 
 const Account = () => {
-
+  
   const [Username, setUsername] = useState();
   const [Useremail, setEmail] = useState();
   const [Mobile, setMobile] = useState();
@@ -47,7 +48,7 @@ const Account = () => {
           <div className="accountContainer">
             <NavBar />
             <div className="useraccount">
-              <div className="image">
+              <div className="image mobile:flex-col laptop:flex-row tablet:flex-row desktop:flex-row">
                 <div className="left">
                   <div className="img">
                     <img className="img" src={profile ? (profile) : ("https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg")}/>

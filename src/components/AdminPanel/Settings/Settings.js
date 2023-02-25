@@ -42,7 +42,7 @@ const [open, setChangePasswordTab] = useState(false);
                 <div className={` ${open ? 'h-[220px]' : 'h-[100px]'} duration-200 bg-white shadow-lg m-[10px] rounded-md p-[10px]`}>
                   <div className="resetpassword flex justify-between m-[10px] rounded-md p-[10px]">
                     <div className="font-bold align-middle">Change Password ?</div>
-                    {!open ? <div className="bg-button-color mt-1  text-slate-100 shadow-md hover:translate-x-1 hover:scale-105 cursor-pointer rounded-xl font-bold p-2" onClick={()=>{setChangePasswordTab(!open)}}>Change Password</div> : <div onClick={()=>{setChangePasswordTab(!open)}} className="text-3xl"><Icon.X/></div>}
+                    {!open ? <div className="bg-button-color mt-1  text-slate-100 shadow-md hover:translate-x-1 hover:scale-105 cursor-pointer rounded-xl font-bold p-2" onClick={()=>{setChangePasswordTab(!open)}}>Change Password</div> : <div onClick={()=>{setChangePasswordTab(!open)}} className="text-3xl cursor-pointer hover:scale-110"><Icon.X/></div>}
                   </div>
                   <div>
                   <form className={` ${open ? '' : 'scale-0'}  duration-300 flex-col`}> 

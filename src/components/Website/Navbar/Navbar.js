@@ -15,7 +15,7 @@ function Navbar() {
 		<header>
 			<p className="logo">LOGO</p>
 			<nav ref={navRef}>
-				<a href="/">Home</a>
+				<a href="/home">Home</a>
 				<div class="dropdown">
   					<a class="dropbtn">Our Services</a>
   					<div class="dropdown-content">

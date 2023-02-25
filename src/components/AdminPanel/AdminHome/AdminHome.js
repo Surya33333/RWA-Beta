@@ -8,13 +8,17 @@ import Widget from "../Widget/Widget.js";
 import Chart from "../Chart/Chart.js";
 import Featured from "../Featured/Featured.js";
 import { useNavigate } from 'react-router-dom';
-
-
+import {react, useState, useContext} from 'react'
+import UserContext from '../../UseContext/UseContext.js';
 const usertoken = true;
 // const usertoken = sessionStorage.getItem('token');
 
 
 function UserDashboard(){
+
+    const {user, setUser} = useContext(UserContext)
+    console.log(user);
+    
 
     return(
         <>
